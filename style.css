@@ -1,0 +1,125 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+input, textarea {
+    font-family: 'Malgun-gothic';
+}
+body {
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:100%;
+    background:#f0f0f0;
+}
+#footer {
+    width:100%;
+    margin:20px 0px 10px 0px;
+    text-align: center;
+}
+#footer > img {
+    width:140px;
+}
+#container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+#leftside {
+    min-width:310px;
+    margin:0px;
+    padding:10px 0px 30px 0px;
+    background:#ebf8ff;
+    overflow:auto;
+    box-shadow: 0px 0px 15px 0px rgb(170 170 170);
+    z-index: 10;
+}
+#leftside ul {
+    margin:0px;
+    padding:0px;
+}
+#leftside li {
+    list-style: none;
+}
+
+#leftside > ul {
+    margin-left:10px;
+    font-size:14pt;
+}
+#leftside > ul > li {
+    margin-top:10px;
+    font-weight:bold;
+}
+#leftside > ul > ul {
+    margin-top:4px;
+    margin-left:24px;
+    cursor:pointer;
+}
+#leftside > ul > ul > li {
+    margin-top:4px;
+    font-size:12pt;
+    word-break: keep-all;
+    transition-duration: 0.3s;
+}
+#leftside > ul > ul > li:before {
+    content: '';
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background-image: url('icon_dot.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -18px;
+    margin-bottom: -3px;
+  }
+#leftside > ul > ul > li:hover {
+    background:#a6e3ff;
+    font-weight: bold;
+}
+#rightside {
+    width:100%;
+    min-width:500px;
+    margin:0px;
+    padding:10px;
+    background:#f0f0f0;
+    overflow:auto;
+}
+#rightSideWrapper {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#rightSideWrapper > div > img {
+    width: calc(100% - 40px);
+    max-width: 300px;
+    margin:20px;
+}
+.prompt_element {
+    max-width:1000px;
+    margin:15px 10px;
+    padding:10px;
+    background:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.prompt_element > div {
+    margin:0px 10px;
+}
+.prompt_element > div > img {
+    width:60px;
+    height:60px;
+}
+.prompt_element > .prompt_string {
+    white-space: pre-wrap;
+    font-size:14pt;
+    line-height:160%;
+    cursor:default;
+}
+.prompt_element > .copy_icon {
+    font-weight:bold;
+    cursor:pointer;
+}
